@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentación Técnica - Git Básico</title>
+  <link rel="stylesheet" href="styles.css" />
+ 
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Documentación Git</header>
+    <a class="nav-link" href="#Introduccion">Introduccion</a>
+    <a class="nav-link" href="#Instalacion">Instalacion</a>
+    <a class="nav-link" href="#Primeros_Pasos">Primeros Pasos</a>
+    <a class="nav-link" href="#Comandos_Comunes">Comandos Comunes</a>
+    <a class="nav-link" href="#Buenas_Practicas">Buenas Practicas</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduccion">
+      <header>Introduccion</header>
+      <p>Git es un sistema de control de versiones distribuido ampliamente utilizado.</p>
+      <p>Permite llevar un historial de cambios y colaborar con otros desarrolladores.</p>
+      <p>Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.</p>
+      <code>git --version</code>
+      <code>git help</code>
+      <ul>
+        <li>Sistema distribuido</li>
+        <li>Popular en desarrollo de software</li>
+        <li>Compatible con GitHub y GitLab</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Instalacion">
+      <header>Instalacion</header>
+      <p>Git puede instalarse desde la web oficial o mediante gestores de paquetes.</p>
+      <p>Está disponible en Windows, macOS y Linux.</p>
+      <code>sudo apt install git</code>
+      <code>brew install git</code>
+      <ul>
+        <li>Descargar desde git-scm.com</li>
+        <li>Instalar vía terminal</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Primeros_Pasos">
+      <header>Primeros Pasos</header>
+      <p>Una vez instalado, puedes configurar tu nombre y correo electrónico.</p>
+      <p>También puedes inicializar un nuevo repositorio con Git.</p>
+      <code>git config --global user.name "Tu Nombre"</code>
+      <code>git config --global user.email "tu@email.com"</code>
+      <ul>
+        <li>Configuración inicial</li>
+        <li>Inicializar repositorio</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Comandos_Comunes">
+      <header>Comandos Comunes</header>
+      <p>Algunos comandos Git que debes conocer son:</p>
+      <p>Estos te permiten gestionar tus archivos y confirmar cambios.</p>
+      <code>git init</code>
+      <code>git add .</code>
+      <code>git commit -m "mensaje"</code>
+      <ul>
+        <li>git status</li>
+        <li>git log</li>
+        <li>git push</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Buenas_Practicas">
+      <header>Buenas Practicas</header>
+      <p>Es recomendable hacer commits pequeños y descriptivos.</p>
+      <p>Utiliza ramas para mantener organizado el desarrollo.</p>
+      <code>git checkout -b nueva-rama</code>
+      <code>git merge rama</code>
+      <ul>
+        <li>Commits frecuentes</li>
+        <li>Mensajes claros</li>
+        <li>Uso de ramas</li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
